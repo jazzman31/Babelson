@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Babelson Audio Technologies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- scripts -->
+    <script src="./js/App.js"></script>
+    <script async="" type="text/javascript" src="./js/lib/background.js"></script>
+<body>
+<canvas id="background"></canvas>
+<template id="licenseViewItemTemplate">
+    <!-- SILENTINFO: productGuid:{{productGuid}},productNameCode:{{productNameCode}},productDisplayName:{{productDisplayName}},productVersion:{{productVersion}},productType:{{productType}},productDescriptionCode:{{productDescriptionCode}},productDescriptionText:{{productDescriptionText}},productBaseImageName:{{productBaseImageName}},licenseType:{{licenseType}},licenseStatus:{{licenseStatus}},deviceName:{{deviceName}},deviceKeyString:{{deviceKeyString}},deviceType:{{deviceType}}-->
+    <li class="listLine productLine licenseLine">
+        <div class="productColumn">
+            <!-- Product information -->
+            <div class="productInfoContainer">
+                <!-- Left Section: picture -->
+                <div class="leftPic">
+                    <div class="imagePlacer boxy">
+                        <!-- picture  -->
+                        <div class="productList-image-container">
+                            <img src="images/products/icons/{{productBaseImageName}}.png"/>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Section: Name, version, description, supported platforms -->
+                <div class="rightInfo spacer-from-right">
+                    <!-- Name, version-->
+                    <div class="nameAndVersionInfo">
+                        <span class="titleHolder boxy productList-product-name">{{productDisplayName}}</span>
+                        <span class="title boxy spacer-from-right productList-product-version">{{productVersion}}</span>
+                    </div>
+                    <!-- description -->
+                    <div class="descriptionContainer spacer-from-top">
+                        <span class="titleHolder boxy descriptionProduct">{{productDescriptionText}}</span>
+                    </div>
+                    <!-- supported platforms -->
+                    <div class="platformsContainer boxy spacer-from-top">
+                        <div class="formatGroup boxy">
+                            <span class="format aax"></span>
+                            <span>AAX</span>
+                        </div>
+
+                        <div class="formatGroup spacer-from-right boxy">
+                            <span class="format au"></span>
+                            <span>AU</span>
+                        </div>
+
+                        <div class="formatGroup spacer-from-right boxy">
+                            <span class="format vst"></span>
+                            <span>VST</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+<div class="licenseInfoContainer">
+    <
+</div>
+            licenseType:{{licenseType}},licenseStatus:{{licenseStatus}}
+            ,deviceName:{{deviceName}},
+            deviceKeyString:{{deviceKeyString}},deviceType:{{deviceType}}
+
+            <span class="product-icon-{{productType}} productIcon"></span>
+            <span class="productList-product-category">{{productCategoryCode}}</span>
+        </div>
+    </li>
+</template>
+<template id="licensesViewTemplate">
+    <div class="sectionTitleContainer">
+        <div class="leftTitleContainer">
+            <h1>Licenses</h1>
+        </div>
+        <div class="descriptionMidContainer">
+            <span>
+                Add or remove licenses from your current computer
+            </span>
+        </div>
+    </div>
+    <div class="listControllers">
+    </div>
+    <ul class="productList licenseList">
+    </ul>
+</template>
+<template id="popupTemplate">
+    <div class="popupOverlay">
+        <input type="button" class="closePopup"/>
+        <section class="popupContent">{{content}}</section>
+    </div>
+</template>
+<template id="productsViewItemTemplate">
+    <li class="listLine productLine">
+        <div data-productGuid="{{productGuid}}" class="productColumn">
+            <span class="product-icon-{{productType}} productIcon"></span>
+            <span class="productList-image-container"><img src="images/products/icons/{{productBaseImageName}}.png" /></span>
+            <span class="productList-product-name">{{productNameCode}}</span>
+            <span class="productList-product-category" >{{productCategoryCode}}</span>
+            <span class="productList-product-description" >{{productDescriptionText}}</span>
+            <span class="productList-product-version">{{productVersion}}</span>
+        </div>
+    </li>
+</template>
+
+<template id="productsViewTemplate">
+    <h1>Products</h1>
+    <ul class="productList">
+    </ul>
+</template>
+<template id="loginTemplate">
+    <section id="loginPage">
+        <img id="loginLogo" src="images/LogoBig.png"/>
+        <div class="login">
+            <form method="post">
+                <input id="username" type="text" name="u" placeholder="Username" required="required"/>
+                <input id="password" type="password" name="p" placeholder="Password" required="required"/>
+                <div class="remember-container">
+
+                    <input type="checkbox" id="remember"/>
+                    <label for="remember">Remember me</label>
+                </div>
+                <button id="login" type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+            </form>
+        </div>
+    </section>
+</template>
+<template id="menuTemplate">
+    <ul>
+        <li id="welcomeContainer"></li>
+        <li>Licenses</li>
+        <li>Devices</li>
+        <li id="userSettingsContainer">
+            <ul class="drop-down">
+                <li>My details</li>
+                <li>Change password</li>
+                <li class="li-hr"></li>
+                <li>Log-out</li>
+            </ul>
+        </li>
+    </ul>
+</template>
+<main>
+    <header>
+    </header>
+    <div id="content"></div>
+    <footer></footer>
+</main>
+</body>
+</html>

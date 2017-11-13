@@ -1,0 +1,23 @@
+header {
+  width: 0%;
+  background: #222;
+  border-right: 1px solid #688dd0;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  color: #eee;
+  line-height: 24px;
+  text-indent: 12px;
+  overflow: hidden;
+  transition: 1s;
+  border-bottom: 1px solid #222;
+}
+header.open {
+  float: left;
+  height: 100%;
+  display: block;
+  clear: both;
+  content: ' ';
+  width: 10%;
+}
+(node:45498) DeprecationWarning: util.print is deprecated. Use console.log instead.

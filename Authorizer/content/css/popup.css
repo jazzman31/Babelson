@@ -1,0 +1,34 @@
+.popupOverlay {
+  background: #111;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+}
+.popupOverlay .popupContent {
+  background: #497690;
+  position: fixed;
+  z-index: 201;
+  width: 70%;
+  height: 70%;
+  vertical-align: middle;
+  left: 15%;
+  top: 8%;
+  border-radius: 26px;
+  padding: 32px;
+  color: white;
+}
+.popupOverlay .closePopup {
+  background: white;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 141px;
+  top: 76px;
+  z-index: 226;
+  content: 'X';
+  color: black;
+  font-size: 30px;
+  display: block;
+}
+(node:40624) DeprecationWarning: util.print is deprecated. Use console.log instead.

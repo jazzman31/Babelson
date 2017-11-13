@@ -1,0 +1,201 @@
+@color_1: #333333;
+@color_2: #ffffff;
+@color_3: rgba(255, 255, 255, 0.75);
+@color_4: #fff;
+@background_color_1: #f5f5f5;
+@background_color_2: #e6e6e6;
+@background_color_3: #29d46f;
+@border_color_1: #e6e6e6 #e6e6e6 #e6e6e6;
+@border_color_2: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+.btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 4px 10px 4px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: @color_1;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  background-color: @background_color_1;
+  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0);
+  border-color: @border_color_1;
+  border-color: @border_color_2;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  transition: 1s;
+  &:hover {
+    background-color: @background_color_2;
+    color: @color_1;
+    text-decoration: none;
+    background-color: @background_color_2;
+    background-position: 0 -15px;
+  }
+  &:active {
+    background-color: @background_color_2;
+  }
+}
+
+.btn.active {
+  background-color: @background_color_2;
+}
+
+.btn.disabled {
+  background-color: @background_color_2;
+}
+
+.btn[disabled] {
+  background-color: @background_color_2;
+}
+
+.btn-large {
+  padding: 9px 14px;
+  font-size: 15px;
+  line-height: normal;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: @color_2;
+  background-color: @background_color_3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#89de96), to(#44d486));
+  background-image: linear-gradient(top, #56dec5, #69d499);
+  background-repeat: repeat-x;
+  border: 1px solid #22bc7b;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5);
+  &:hover {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: @color_2;
+    filter: none;
+    background-color: @background_color_3;
+  }
+  &:active {
+    filter: none;
+    background-color: @background_color_3;
+  }
+}
+
+.btn-primary.active {
+  color: @color_3;
+  filter: none;
+  background-color: @background_color_3;
+}
+
+.btn-primary.disabled {
+  filter: none;
+  background-color: @background_color_3;
+}
+
+.btn-primary[disabled] {
+  filter: none;
+  background-color: @background_color_3;
+}
+
+.btn-block {
+  width: 100%;
+  display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.login {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -150px;
+  width: 300px;
+  height: 300px;
+
+  h1 {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: @color_4;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}
+
+label[for="remember"] {
+  color: rgb(115, 115, 116);
+  font-size: 13px;
+  margin-top: 2px;
+  display: block;
+  float: left;
+  margin-left: 6px;
+  text-shadow: 1px 1px 11px #252525;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 18px;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 13px;
+  color: @color_4;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+  -webkit-transition: box-shadow .5s ease;
+  -moz-transition: box-shadow .5s ease;
+  -o-transition: box-shadow .5s ease;
+  -ms-transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+  &:focus {
+    color: #d6d6d6;
+    box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+  }
+
+  &[type="checkbox"] {
+    transition: 1s;
+    position: relative;
+    width: 10px;
+    -webkit-appearance: inherit;
+    float: left;
+    margin-left: 0px;
+    margin-top: -2px;
+    position: relative;
+    cursor: pointer;
+    &:checked {
+      background: white;
+      &::after {
+        content: 'x';
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        float: left;
+        color: #053371;
+        box-shadow: inset 1px 1px 4px 2px rgba(84, 84, 84, 0.77);
+        border-radius: 3px;
+        width: 23px;
+        height: 23px;
+        text-align: center;
+        line-height: 22px;
+      }
+    }
+  }
+
+}

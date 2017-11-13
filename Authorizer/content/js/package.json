@@ -1,0 +1,15 @@
+{
+  "name": "babelson-authorizer",
+  "version": "0.0.1",
+  "description": "Babelson's service application for license management",
+  "main": "App.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bambi Haber",
+  "license": "ISC",
+  "dependencies": {
+    "validate.js": "^0.12.0"
+  }
+}

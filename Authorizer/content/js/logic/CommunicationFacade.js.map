@@ -1,0 +1,1 @@
+{"version":3,"sources":["CommunicationFacade.es6"],"names":[],"mappings":";;AAAA,MAAM,mBAAN,CAA0B;AACtB,kBAAc,CAEb;AAHqB","file":"CommunicationFacade.js","sourcesContent":["class CommunicationFacade {\n    constructor() {\n\n    }\n}\n"]}

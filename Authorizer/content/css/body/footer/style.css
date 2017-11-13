@@ -1,0 +1,11 @@
+footer {
+  height: 24px;
+  background: linear-gradient(to right, #2b2b2b 0%, #111111 35%, #1e1e1e 100%);
+  position: fixed;
+  bottom: 0;
+  display: table;
+  width: 100%;
+  opacity: 0.6;
+  z-index: 2;
+}
+(node:15537) DeprecationWarning: util.print is deprecated. Use console.log instead.

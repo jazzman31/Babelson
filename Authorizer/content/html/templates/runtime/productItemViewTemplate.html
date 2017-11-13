@@ -1,0 +1,12 @@
+<template id="productsViewItemTemplate">
+    <li class="listLine productLine">
+        <div data-productGuid="{{productGuid}}" class="productColumn">
+            <span class="product-icon-{{productType}} productIcon"></span>
+            <span class="productList-image-container"><img src="images/products/icons/{{productBaseImageName}}.png" /></span>
+            <span class="productList-product-name">{{productNameCode}}</span>
+            <span class="productList-product-category" >{{productCategoryCode}}</span>
+            <span class="productList-product-description" >{{productDescriptionText}}</span>
+            <span class="productList-product-version">{{productVersion}}</span>
+        </div>
+    </li>
+</template>
