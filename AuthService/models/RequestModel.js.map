@@ -1,0 +1,1 @@
+{"version":3,"sources":["RequestModel.es6"],"names":[],"mappings":";;;;IAAM,aAAa,GACJ,SADT,aAAa,CACH,MAAM,EAAE;0BADlB,aAAa;;AAEX,QAAI,CAAC,IAAI,GAAG,MAAM,CAAC,IAAI,CAAC;CAC3B","file":"RequestModel.js","sourcesContent":["class ResponseModel {\n    constructor(params) {\n        this.data = params.data;\n    }\n}\n"]}
